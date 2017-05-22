@@ -5,9 +5,20 @@
 }
 .header{
     height: 750px;
+    border:  1px green solid;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: forestgreen;
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+    z-index: 100;
 }
 .logo{
-    margin: 30px 20px;
+    margin: 10px 20px;
 }
 ul{
     list-style: none;
@@ -21,7 +32,7 @@ ul{
 .navbar{
     width: 600px;
     float: right;
-    margin: 20px;
+    margin: 10px;
 }
 .navbar li:hover{
     color: #0086b3;
@@ -76,6 +87,9 @@ ul{
 #main img{
     width: 40%;
 }
+#main img:hover{
+    width: 60%;
+}
 .mainCake,.mainCake2{
     margin-top: 40px;
     margin-left: 40px;
@@ -108,8 +122,8 @@ ul{
 .info ul>li{
     width: 200px;
     height: 200px;
-    padding: 60px;
-    margin: 30px auto;
+    padding: 60px 60px 0 60px;
+    margin: 0 auto;
     position: relative;
 }
 .infoImag{
@@ -132,6 +146,20 @@ ul{
     left: 330px;
     width: 200px;
     top: 110px;
+}
+.time li::before{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 23%;
+    border-left:1px solid;
+    position: absolute;
+    top:0;
+    left:50%;
+    z-index: -1;
+}
+.time li:first-child{
+    padding-top: 0;
 }
 #footer{
     width:80%;
