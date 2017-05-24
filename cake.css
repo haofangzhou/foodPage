@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    /*border:  1px solid;*/
 }
 .header{
     height: 750px;
@@ -13,7 +12,6 @@
     left: 0;
     background-color: forestgreen;
     height: 70px;
-    line-height: 70px;
     width: 100%;
     z-index: 100;
 }
@@ -32,7 +30,15 @@ ul{
 .navbar{
     width: 600px;
     float: right;
-    margin: 10px;
+    height: 70px;
+    padding: auto 30px;
+}
+.navbar li{
+    height: 70px;
+    display: inline-block;
+    line-height: 70px;
+    margin:auto 10px;
+
 }
 .navbar li:hover{
     color: #0086b3;
@@ -41,12 +47,13 @@ ul{
     content:'';
     display: block;
     clear: both;
-
 }
 .navbar li{
     float: right;
     display: inline-block;
     padding: 10px;
+    line-height: 70px;
+
 }
 .theme{
     text-align: center;
@@ -85,30 +92,26 @@ ul{
 }
 
 #main img{
-    width: 40%;
+    width: 50%;
 }
+
 #main img:hover{
     width: 60%;
 }
 .mainCake,.mainCake2{
     margin-top: 40px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .mainCake li,.mainCake2 li{
-    text-align: center;
     float: left;
+    width: 300px;
 }
-.mainCake li:first-child{
-    position: relative;
+.mainCake ul,.mainCake2 ul{
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
 }
-.mainCake li:nth-child(2),.mainCake2 li:nth-child(2){
-    position: absolute;
-    left: 390px;
-}
-.mainCake li:last-child,.mainCake2 li:last-child{
-    position: absolute;
-    left: 740px;
-}
+
 .mainCake2 :after,.mainCake :after{
     content:'';
     display: block;
@@ -169,5 +172,57 @@ ul{
     margin: 30px 60px;
 }
 .footimg{
+    text-align: center;
+}
+.idea{
+    border: 1px beige solid;
+    padding: 30px auto;
+    height: 680px;
+}
+
+.idea input{
+    width: 300px;
+    height: 25px;
+    font-size: 28px;
+    padding:5px;
+    margin: 10px;
+}
+.idea textarea{
+    font-size: 26px;
+    float: left;
+}
+.bgCard2{
+    position:absolute;
+    height: 680px;
+    width: 100%;
+    z-index: -1;
+}
+#info{
+    width: 400px;
+    float: left;
+}
+.sumbitIdea{
+    font-size: 24px;
+}
+.idea form{
+    margin: 30px auto;
+    width: 800px;
+    height: 400px;
+
+}
+
+.idea form:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.idea button{
+    padding: 5px 20px;
+    font-size: 22px;
+    background-color:forestgreen ;
+    margin-top: 30px;
+    display: inline-block;
+    }
+.sumbmit{
     text-align: center;
 }
